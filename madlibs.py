@@ -63,7 +63,11 @@ def show_madlib():
     foods = request.args.getlist("foods")
     #print foods
 
-    return render_template("madlib.html",
+    temp_list = ["madlib.html","madlib2.html"]
+
+    template = choice(temp_list)
+
+    return render_template(template,
                            mad_person=mad_person,
                            color=color,
                            noun=noun,
