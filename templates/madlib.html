@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>Madlib</title>
+    <link rel="stylesheet" type="text/css" href="../static/madlibs.css">
+</head>
+<body>
+
+    <p>There once was a <span style="color:{{color}}">{{ color }}</span> {{ noun }} sitting in the Hackbright Lab.
+    When {{ mad_person }} went to pick it up, it burst into flames in a totally
+    {{ adjective }} way.
+    </p>
+    <p>
+    Your favorite foods are:<br>
+    <ul>
+    {% for food in foods %}
+        <li>{{ food }}</li>
+    {% endfor %}
+    </ul>
+    </p>
+</body>
+</html>
