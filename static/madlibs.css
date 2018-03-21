@@ -11,3 +11,24 @@ li{
      list-style: circle;
 
 }
+
+.jigsaw{
+    height: 200px;
+}
+
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.purple{
+    color: purple;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}

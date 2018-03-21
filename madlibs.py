@@ -19,7 +19,7 @@ AWESOMENESS = [
 def start_here():
     """Display homepage."""
 
-    return "Hi! This is the home page."
+    return render_template("index.html")
 
 
 @app.route('/hello')
@@ -63,6 +63,11 @@ def show_madlib():
     foods = request.args.getlist("foods")
     #print foods
 
+    # if foods:
+    #     has_foods = "Your favorite foods are:"
+    # else:
+    #     has_foods = ""
+
     temp_list = ["madlib.html","madlib2.html"]
 
     template = choice(temp_list)
@@ -72,7 +77,9 @@ def show_madlib():
                            color=color,
                            noun=noun,
                            adjective=adjective,
-                           foods=foods)
+                           foods=foods,
+                           # has_foods=has_foods
+                           )
 
 
 
